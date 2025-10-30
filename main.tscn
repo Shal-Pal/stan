@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqm3xvw8n7k2q"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_x5pqm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8y7qs"]
+size = Vector2(40, 40)
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Ground" type="Polygon2D" parent="Background"]
+color = Color(0.4, 0.5, 0.35, 1)
+polygon = PackedVector2Array(0, 500, 1152, 500, 1000, 100, 152, 100)
+
+[node name="HorizonLine" type="Line2D" parent="Background"]
+points = PackedVector2Array(0, 100, 1152, 100)
+width = 2.0
+default_color = Color(0.3, 0.3, 0.3, 1)
+
+[node name="Sky" type="ColorRect" parent="Background"]
+offset_right = 1152.0
+offset_bottom = 100.0
+color = Color(0.53, 0.7, 0.85, 1)
+
+[node name="GridLines" type="Node2D" parent="Background"]
+
+[node name="VerticalLine1" type="Line2D" parent="Background/GridLines"]
+points = PackedVector2Array(288, 100, 230, 500)
+width = 1.0
+default_color = Color(0.35, 0.45, 0.3, 1)
+
+[node name="VerticalLine2" type="Line2D" parent="Background/GridLines"]
+points = PackedVector2Array(576, 100, 460, 500)
+width = 1.0
+default_color = Color(0.35, 0.45, 0.3, 1)
+
+[node name="VerticalLine3" type="Line2D" parent="Background/GridLines"]
+points = PackedVector2Array(864, 100, 690, 500)
+width = 1.0
+default_color = Color(0.35, 0.45, 0.3, 1)
+
+[node name="HorizontalLine1" type="Line2D" parent="Background/GridLines"]
+points = PackedVector2Array(152, 200, 1000, 200)
+width = 1.0
+default_color = Color(0.35, 0.45, 0.3, 1)
+
+[node name="HorizontalLine2" type="Line2D" parent="Background/GridLines"]
+points = PackedVector2Array(190, 300, 962, 300)
+width = 1.0
+default_color = Color(0.35, 0.45, 0.3, 1)
+
+[node name="HorizontalLine3" type="Line2D" parent="Background/GridLines"]
+points = PackedVector2Array(228, 400, 924, 400)
+width = 1.0
+default_color = Color(0.35, 0.45, 0.3, 1)
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(576, 300)
+script = ExtResource("1_x5pqm")
+
+[node name="Square" type="ColorRect" parent="Player"]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+color = Color(0.9, 0.2, 0.2, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_8y7qs")
