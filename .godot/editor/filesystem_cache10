@@ -1,4 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761843482
+::res://::1761847138
+BG1.jpg::CompressedTexture2D::6225246427477776584::1761847110::1761847148::1::::<><><>0<>0<>a46f87c79e7bb42327bb5fa64f329e3c<>res://.godot/imported/BG1.jpg-55fad4b2fac6a367469005aa45f9b48f.ctex::
+IdleMain2.png::CompressedTexture2D::3047596216122364431::1761847079::1761847149::1::::<><><>0<>0<>c72d9b1eda50f8fecb7ca05003abb30a<>res://.godot/imported/IdleMain2.png-11027ee3ce6cdd7afb253a5b174610c4.ctex::
 main.tscn::PackedScene::3535957002501671870::1761843413::0::1::::<><><>0<>0<><>::res://player.gd
 player.gd::GDScript::7571333142747313900::1761843414::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Running Man.png::CompressedTexture2D::2929625615558571807::1761847070::1761847149::1::::<><><>0<>0<>d21b4c376ae79564eec60c830024c2dc<>res://.godot/imported/Running Man.png-2fc4b681a6a3ab537e4e805b4124d109.ctex::
